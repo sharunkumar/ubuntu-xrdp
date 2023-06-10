@@ -75,6 +75,7 @@ RUN apt -y full-upgrade && apt-get install -y \
   mkdir -p /var/lib/xrdp-pulseaudio-installer
 COPY --from=builder /tmp/so/module-xrdp-source.so /var/lib/xrdp-pulseaudio-installer
 COPY --from=builder /tmp/so/module-xrdp-sink.so /var/lib/xrdp-pulseaudio-installer
+RUN apt update -y && apt install curl -y
 ADD bin /usr/bin
 ADD etc /etc
 ADD autostart /etc/xdg/autostart
