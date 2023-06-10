@@ -2,9 +2,9 @@ version: '3.5'
 services:
   terminalserver:
     build: ./
-    image: danielguerra/ubuntu-xrdp:20.04
-    container_name: uxrdp
-    hostname: terminalserver
+    image: ubuntu-22.04
+    container_name: ubuntu-22.04
+    hostname: ubuntu
     restart: always
     shm_size: 1g
     environment:
