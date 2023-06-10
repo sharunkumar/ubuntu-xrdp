@@ -2,20 +2,15 @@
 
 Fully implemented Multi User xrdp
 with xorgxrdp and pulseaudio
-on Ubuntu 20.04/18.04/16.04/kali.
+on Ubuntu 20.04/18.04
 Copy/Paste and sound is working.
 Users can re-login in the same session.
 Xfce4, Firefox are pre installed.
 
 # Tags
 
-danielguerra/ubuntu-xrdp:16.04
 danielguerra/ubuntu-xrdp:18.04  or latest
 danielguerra/ubuntu-xrdp:20.04
-danielguerra/ubuntu-xrdp:clean (for development)
-
-and a debian version kali linux (experiment)
-danielguerra/ubuntu-xrdp:kali
 
 ## Usage
 
