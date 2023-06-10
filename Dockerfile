@@ -36,15 +36,13 @@ RUN make
 RUN mkdir -p /tmp/so
 RUN cp src/.libs/*.so /tmp/so
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 ARG ADDITIONAL_PACKAGES=""
 ENV ADDITIONAL_PACKAGES=${ADDITIONAL_PACKAGES}
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && apt install -y software-properties-common apt-utils
 RUN add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && apt update
 RUN apt -y full-upgrade && apt-get install -y \
-  adobe-flashplugin \
-  browser-plugin-freshplayer-pepperflash \
   ca-certificates \
   crudini \
   firefox \
