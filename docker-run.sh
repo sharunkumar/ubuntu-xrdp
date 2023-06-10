@@ -1,0 +1,1 @@
+docker run -d --name ubuntu-22.04 --hostname ubuntu --shm-size 1g -p 3389:3389 -p 2222:22 ubuntu-22.04
